@@ -1,0 +1,10 @@
+.vscode
+.vscode-test
+src/
+node_modules/
+*.ts
+!dist/**
+tsconfig.json
+build.cjs
+logo.svg
+.gitignore

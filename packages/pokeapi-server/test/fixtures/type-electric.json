@@ -1,0 +1,32 @@
+{
+  "id": 13,
+  "name": "electric",
+  "damage_relations": {
+    "double_damage_from": [
+      { "name": "ground", "url": "" }
+    ],
+    "double_damage_to": [
+      { "name": "flying", "url": "" },
+      { "name": "water", "url": "" }
+    ],
+    "half_damage_from": [
+      { "name": "flying", "url": "" },
+      { "name": "steel", "url": "" },
+      { "name": "electric", "url": "" }
+    ],
+    "half_damage_to": [
+      { "name": "grass", "url": "" },
+      { "name": "electric", "url": "" },
+      { "name": "dragon", "url": "" }
+    ],
+    "no_damage_from": [],
+    "no_damage_to": [
+      { "name": "ground", "url": "" }
+    ]
+  },
+  "pokemon": [
+    { "pokemon": { "name": "pikachu", "url": "" }, "slot": 1 },
+    { "pokemon": { "name": "raichu", "url": "" }, "slot": 1 }
+  ],
+  "generation": { "name": "generation-i", "url": "" }
+}

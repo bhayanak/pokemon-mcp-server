@@ -1,0 +1,29 @@
+{
+  "id": 25,
+  "name": "pikachu",
+  "is_baby": false,
+  "is_legendary": false,
+  "is_mythical": false,
+  "gender_rate": 4,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": { "name": "medium", "url": "" },
+  "egg_groups": [
+    { "name": "field", "url": "" },
+    { "name": "fairy", "url": "" }
+  ],
+  "color": { "name": "yellow", "url": "" },
+  "habitat": { "name": "forest", "url": "" },
+  "generation": { "name": "generation-i", "url": "" },
+  "evolution_chain": { "url": "https://pokeapi.co/api/v2/evolution-chain/10/" },
+  "flavor_text_entries": [
+    {
+      "flavor_text": "When several of these POKéMON gather, their\nelectricity could build and cause lightning storms.",
+      "language": { "name": "en", "url": "" },
+      "version": { "name": "red", "url": "" }
+    }
+  ],
+  "genera": [
+    { "genus": "Mouse Pokémon", "language": { "name": "en", "url": "" } }
+  ]
+}

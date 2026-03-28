@@ -1,0 +1,37 @@
+{
+  "id": 25,
+  "name": "pikachu",
+  "base_experience": 112,
+  "height": 4,
+  "weight": 60,
+  "abilities": [
+    { "ability": { "name": "static", "url": "https://pokeapi.co/api/v2/ability/9/" }, "is_hidden": false, "slot": 1 },
+    { "ability": { "name": "lightning-rod", "url": "https://pokeapi.co/api/v2/ability/31/" }, "is_hidden": true, "slot": 3 }
+  ],
+  "types": [
+    { "slot": 1, "type": { "name": "electric", "url": "https://pokeapi.co/api/v2/type/13/" } }
+  ],
+  "stats": [
+    { "stat": { "name": "hp", "url": "" }, "effort": 0, "base_stat": 35 },
+    { "stat": { "name": "attack", "url": "" }, "effort": 0, "base_stat": 55 },
+    { "stat": { "name": "defense", "url": "" }, "effort": 0, "base_stat": 40 },
+    { "stat": { "name": "special-attack", "url": "" }, "effort": 0, "base_stat": 50 },
+    { "stat": { "name": "special-defense", "url": "" }, "effort": 0, "base_stat": 50 },
+    { "stat": { "name": "speed", "url": "" }, "effort": 2, "base_stat": 90 }
+  ],
+  "moves": [
+    {
+      "move": { "name": "thunderbolt", "url": "https://pokeapi.co/api/v2/move/85/" },
+      "version_group_details": [
+        { "level_learned_at": 0, "move_learn_method": { "name": "machine", "url": "" }, "version_group": { "name": "red-blue", "url": "" } }
+      ]
+    }
+  ],
+  "sprites": {
+    "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+    "front_shiny": null,
+    "back_default": null,
+    "back_shiny": null
+  },
+  "species": { "name": "pikachu", "url": "https://pokeapi.co/api/v2/pokemon-species/25/" }
+}

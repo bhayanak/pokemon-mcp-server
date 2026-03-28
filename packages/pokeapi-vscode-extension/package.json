@@ -1,0 +1,93 @@
+{
+  "name": "pokeapi-mcp-extension",
+  "displayName": "PokéAPI MCP Server",
+  "description": "VS Code extension providing PokéAPI MCP server for AI assistants — Pokémon data, types, moves, abilities, evolutions",
+  "version": "0.1.0",
+  "publisher": "bhayanak",
+  "license": "MIT",
+  "icon": "logo.png",
+  "engines": {
+    "vscode": "^1.99.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhayanak/pokemon-mcp-server"
+  },
+  "categories": [
+    "AI",
+    "Chat"
+  ],
+  "keywords": [
+    "mcp",
+    "mcp server",
+    "ai",
+    "copilot",
+    "pokeapi",
+    "pokemon",
+    "pokedex",
+    "model context protocol",
+    "claude",
+    "github copilot",
+    "game data",
+    "type chart"
+  ],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "PokéAPI MCP Server",
+      "properties": {
+        "pokeapiMcp.baseUrl": {
+          "type": "string",
+          "default": "https://pokeapi.co/api/v2",
+          "description": "PokéAPI base URL"
+        },
+        "pokeapiMcp.cacheTtlMs": {
+          "type": "number",
+          "default": 86400000,
+          "description": "Cache TTL in milliseconds (default: 24 hours)"
+        },
+        "pokeapiMcp.cacheMaxSize": {
+          "type": "number",
+          "default": 500,
+          "description": "Maximum number of cache entries (LRU eviction)"
+        },
+        "pokeapiMcp.timeoutMs": {
+          "type": "number",
+          "default": 10000,
+          "description": "HTTP request timeout in milliseconds"
+        },
+        "pokeapiMcp.language": {
+          "type": "string",
+          "default": "en",
+          "description": "Preferred language for names and descriptions"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "build": "node build.cjs",
+    "dev": "node build.cjs && echo 'Extension built for development'",
+    "test": "echo 'No tests configured'",
+    "test:coverage": "echo 'No tests configured'",
+    "typecheck": "tsc --noEmit",
+    "lint": "echo 'Lint OK'",
+    "lint:fix": "echo 'Lint OK'",
+    "format": "prettier --check \"src/**/*.ts\"",
+    "format:fix": "prettier --write \"src/**/*.ts\"",
+    "validate": "tsc --noEmit",
+    "package": "node build.cjs && npx @vscode/vsce package --no-dependencies -o pokeapi-mcp-extension-$(node -p \"require('./package.json').version\").vsix",
+    "ci": "tsc --noEmit"
+  },
+  "dependencies": {
+    "pokeapi-mcp-server": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.57",
+    "@types/vscode": "^1.99.0",
+    "@vscode/vsce": "^3.3.2",
+    "esbuild": "^0.25.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  }
+}

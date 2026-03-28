@@ -1,0 +1,27 @@
+{
+  "id": 85,
+  "name": "thunderbolt",
+  "accuracy": 100,
+  "power": 90,
+  "pp": 15,
+  "priority": 0,
+  "type": { "name": "electric", "url": "" },
+  "damage_class": { "name": "special", "url": "" },
+  "effect_entries": [
+    {
+      "effect": "Inflicts regular damage. Has a $effect_chance% chance of paralyzing the target.",
+      "short_effect": "Has a $effect_chance% chance of paralyzing the target.",
+      "language": { "name": "en", "url": "" }
+    }
+  ],
+  "effect_chance": 10,
+  "generation": { "name": "generation-i", "url": "" },
+  "learned_by_pokemon": [
+    { "name": "pikachu", "url": "" },
+    { "name": "raichu", "url": "" },
+    { "name": "jolteon", "url": "" },
+    { "name": "ampharos", "url": "" },
+    { "name": "magneton", "url": "" },
+    { "name": "electabuzz", "url": "" }
+  ]
+}
