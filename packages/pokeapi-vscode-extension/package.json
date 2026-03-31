@@ -86,7 +86,7 @@
     "ci": "tsc --noEmit"
   },
   "dependencies": {
-    "pokeapi-mcp-server": "workspace:*"
+    "@fazorboy/pokeapi-mcp-server": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20.17.57",

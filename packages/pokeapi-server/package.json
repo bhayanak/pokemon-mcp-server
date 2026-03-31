@@ -1,5 +1,5 @@
 {
-  "name": "pokeapi-mcp-server",
+  "name": "@fazorboy/pokeapi-mcp-server",
   "version": "0.1.0",
   "description": "MCP server for PokéAPI — Pokémon data, types, moves, abilities, evolutions",
   "type": "module",
