@@ -34,6 +34,12 @@
   "activationEvents": ["onStartupFinished"],
   "main": "./dist/extension.js",
   "contributes": {
+    "mcpServerDefinitionProviders": [
+      {
+        "id": "pokeapi-mcp-server",
+        "label": "PokéAPI MCP Server"
+      }
+    ],
     "configuration": {
       "title": "PokéAPI MCP Server",
       "properties": {

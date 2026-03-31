@@ -1,7 +1,22 @@
 const esbuild = require('esbuild');
 const path = require('path');
+const fs = require('fs');
 
 const serverEntry = path.resolve(__dirname, '..', 'pokeapi-server', 'src', 'index.ts');
+
+// Plugin to strip shebang from entry point (avoids duplicate when bundled as CJS)
+const stripShebang = {
+  name: 'strip-shebang',
+  setup(build) {
+    build.onLoad({ filter: /index\.ts$/ }, (args) => {
+      if (args.path === serverEntry) {
+        let contents = fs.readFileSync(args.path, 'utf8');
+        contents = contents.replace(/^#!.*\n/, '');
+        return { contents, loader: 'ts' };
+      }
+    });
+  },
+};
 
 Promise.all([
   // Extension entry point
@@ -26,9 +41,7 @@ Promise.all([
     target: 'node18',
     sourcemap: true,
     minify: false,
-    banner: {
-      js: '#!/usr/bin/env node',
-    },
+    plugins: [stripShebang],
   }),
 ])
   .then(() => console.log('Extension built successfully (extension.js + server.js)'))

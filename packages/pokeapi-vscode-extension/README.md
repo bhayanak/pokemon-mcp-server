@@ -76,6 +76,24 @@ All settings are available in **Settings > Extensions > PokéAPI MCP Server**:
 
 After changing settings, restart the MCP server from the VS Code MCP servers panel.
 
+---
+## Example Output
+
+```
+#025 Pikachu — Electric ⚡
+"Mouse Pokémon" | Gen I | Height: 0.4m | Weight: 6.0kg
+
+Base Stats (Total: 320)
+  HP: 35       ████░░░░░░░░░░░
+  Attack: 55   ████████░░░░░░░
+  Defense: 40  █████░░░░░░░░░░
+  Sp. Atk: 50  ███████░░░░░░░░
+  Sp. Def: 50  ███████░░░░░░░░
+  Speed: 90    ████████████░░░
+
+Abilities: Static, Lightning Rod (hidden)
+```
+
 ## Requirements
 
 - VS Code ≥ 1.99.0
